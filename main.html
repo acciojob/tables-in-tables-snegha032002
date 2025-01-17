@@ -9,15 +9,26 @@
         .black-cell {
             background-color: black;
             color: white;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
         }
     </style>
-  </head>
   <body>
      <h1>Tables in Tables</h1>
-    <table border="1" style="width: 100%; text-align: center;">
+    <table>
+        <!-- Row 1 -->
         <tr>
             <td>
-                <table border="1" style="width: 100%;">
+                <!-- Nested Table 1 -->
+                <table>
                     <thead>
                         <tr>
                             <th colspan="2">Nested Table 1</th>
@@ -36,7 +47,8 @@
                 </table>
             </td>
             <td>
-                <table border="1" style="width: 100%;">
+                <!-- Nested Table 2 -->
+                <table>
                     <thead>
                         <tr>
                             <th>Nested Table 2</th>
@@ -59,9 +71,11 @@
                 </table>
             </td>
         </tr>
+        <!-- Row 2 -->
         <tr>
             <td>
-                <table border="1" style="width: 100%;">
+                <!-- Nested Table 3 -->
+                <table>
                     <thead>
                         <tr>
                             <th colspan="2">Nested Table 3</th>
@@ -82,7 +96,8 @@
                 </table>
             </td>
             <td>
-                <table border="1" style="width: 100%;">
+                <!-- Nested Table 4 -->
+                <table>
                     <thead>
                         <tr>
                             <th colspan="2">Nested Table 4</th>
